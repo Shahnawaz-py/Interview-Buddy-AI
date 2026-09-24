@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#849495","surface-variant":"#26364a","on-tertiary":"#003824","on-surface":"#d3e4fe","on-primary-container":"#006970","surface-container-high":"#1b2b3f","on-secondary-container":"#b0b2ff","surface-bright":"#2a3a4f","tertiary":"#d8ffe7","on-secondary-fixed":"#07006c","surface":"#031427","secondary-fixed-dim":"#c0c1ff","on-tertiary-fixed-variant":"#005236","on-primary-fixed-variant":"#004f54","inverse-on-surface":"#213145","primary-container":"#00f0ff","secondary-fixed":"#e1e0ff","outline-variant":"#3b494b","secondary":"#c0c1ff","surface-container-highest":"#26364a","on-error-container":"#ffdad6","on-surface-variant":"#b9cacb","on-error":"#690005","on-tertiary-container":"#006d4a","inverse-primary":"#006970","primary-fixed-dim":"#00dbe9","primary":"#dbfcff","surface-container-low":"#0b1c30","background":"#031427","on-secondary":"#1000a9","error":"#ffb4ab","on-primary":"#00363a","tertiary-container":"#65f2b5","tertiary-fixed":"#6ffbbe","on-tertiary-fixed":"#002113","surface-tint":"#00dbe9","surface-container":"#102034","on-secondary-fixed-variant":"#2f2ebe","on-background":"#d3e4fe","inverse-surface":"#d3e4fe","error-container":"#93000a","surface-dim":"#031427","on-primary-fixed":"#002022","primary-fixed":"#7df4ff","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#000f21","secondary-container":"#3131c0"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1rem","margin-lg":"2rem","gutter-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","margin":"1.5rem","space-xs":"0.25rem","margin-sm":"1rem","gutter-sm":"0.75rem","space-sm":"0.5rem","space-lg":"1.5rem"},fontFamily:{"title-md":["Geist"],"body-sm":["Geist"],"code-lg":["JetBrains Mono"],"body-md":["Geist"],"label-sm":["JetBrains Mono"],"headline-xl":["Geist"],"label-md":["JetBrains Mono"],"headline-xl-mobile":["Geist"],"body-lg":["Geist"],"headline-md":["Geist"],"headline-lg":["Geist"],"code-md":["JetBrains Mono"]},fontSize:{"title-md":["18px",{"lineHeight":"26px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"code-lg":["14px",{"lineHeight":"22px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"code-md":["13px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-gutter-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Interview Buddy Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFRdZOeYB-_fGxOxQDR30mqgQe9OtG5QKpRX8fkD-UZWT4Lg6QeEoEnHMURwvClcjFI2bWlGkD_NUJOpqX5HSpc_grJ7eiqGbm-I4Y44gjQ7opqhXyqQhUz1QzbNhnNpkMSBf8yjY0Bsc-HfV1ojiGRn3Vk9ON8UNxiQMT4VV6AkgGf7xp4KIUWk2NhcTueqZrOrvl1ToCrUa74WZNH-kZCSm_NYu19MB8C3e8Maw-q97B1My6jnNC"/><span class="font-title-md text-title-md text-on-surface font-semibold tracking-tight">Interview Buddy</span></div><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-high/60 border border-outline-variant/40"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Live Session Ready</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="text-on-surface bg-surface-container-high border-b-2 border-primary-container"><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="practice" href="#">Practice</a><a aria-current="page" class="px-space-md py-space-sm font-body-md transition-colors rounded-lg text-on-surface bg-surface-container-high border-b-2 border-primary-container" data-path="history" href="#">History</a><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="guides" href="#">Guides</a><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="settings" href="#">Settings</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low border border-outline-variant/50 rounded-full p-space-xs"><button aria-label="Theme Toggle" class="flex items-center justify-center w-7 h-7 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">light_mode</span></button><button aria-label="Dark Mode Enabled" class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-highest text-primary-container shadow-inner" type="button"><span class="material-symbols-outlined text-[16px]">dark_mode</span></button></div><div class="h-4 w-[1px] bg-outline-variant/40 hidden sm:block"></div><button class="flex items-center gap-space-sm focus:outline-none focus:ring-1 focus:ring-primary-container rounded-full p-0.5" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0C6kQRww1V78MUN1MyBGv5gqQr059tJscQXPXyNZG0FTtyHqeacRBdevWwXZ4vj81Iwbnjq3Pt08w3OLO33yhAW_K6X-l3Wu5pXA0DEj5GL89PKkIvNjAuKnfHf2K6m5dLzD5FbWN9eVGbkRLUEM0SrpvlEDTGg0YaygEXQ04XIWhzf4QSc-pOXGoIQhSfXvyXa_II8YenWGanddsDg4LvWth28ZWinC0aEjYPDLF5142TKydfcE"/></button></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-container-lowest px-gutter-lg py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-primary-container uppercase tracking-wider">
+<span class="flex h-2 w-2 rounded-full bg-primary-container"></span>
+<span>Interview Session Report • ID-8842-MERN</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-body-md text-body-md hover:bg-surface-container-highest transition-colors flex items-center gap-space-xs shadow-sm" id="downloadRecBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-container">download</span>
+<span>Download Recording (WebM)</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-primary-container text-surface-container-lowest font-body-md text-body-md font-semibold hover:opacity-95 transition-opacity flex items-center gap-space-xs shadow-md shadow-primary-container/20" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Start New Interview</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-secondary">
+<span>FULL STACK DEVELOPER (MERN)</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">MID-LEVEL TRACK</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Performance Evaluation</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Conducted on October 24, 2024 • Completed in 22 min 40 sec • Evaluator: Claude 3.5 Sonnet Technical Persona</p>
+</div>
+<div class="lg:col-span-4 flex justify-start lg:justify-end">
+<div class="bg-surface-container-high px-space-lg py-space-md rounded-xl flex items-center gap-space-md shadow-sm">
+<div class="relative flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90">
+<circle class="text-surface-variant" cx="32" cy="32" fill="transparent" r="26" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container" cx="32" cy="32" fill="transparent" r="26" stroke="currentColor" stroke-dasharray="163.36" stroke-dashoffset="24.8" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<span class="absolute font-code-lg text-code-lg text-on-surface font-bold">85%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold">Consensus Verdict</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold leading-tight">Strong Hire</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">92nd percentile pool</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto w-full px-gutter-lg py-space-xl flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-7 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary-container">query_stats</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Core Competency Matrix</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-sm py-0.5 rounded">Adaptive Weighting v4.2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Multi-vector analysis scored against mid-level engineering benchmarks.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md my-space-md items-center">
+<div class="md:col-span-6 flex justify-center items-center py-space-sm">
+<svg class="w-48 h-48 drop-shadow-md" viewbox="0 0 220 220">
+<polygon class="text-surface-variant/40" fill="currentColor" points="110,20 195,80 162,175 58,175 25,80"></polygon>
+<polygon class="text-outline-variant/60" fill="none" points="110,40 175,85 150,158 70,158 45,85" stroke="currentColor" stroke-width="1"></polygon>
+<polygon class="text-outline-variant/40" fill="none" points="110,65 155,95 138,142 82,142 65,95" stroke="currentColor" stroke-width="1"></polygon>
+<line class="text-outline-variant/50" stroke="currentColor" stroke-width="1" x1="110" x2="110" y1="110" y2="20"></line>
+<line class="text-outline-variant/50" stroke="currentColor" stroke-width="1" x1="110" x2="195" y1="110" y2="80"></line>
+<line class="text-outline-variant/50" stroke="currentColor" stroke-width="1" x1="110" x2="162" y1="110" y2="175"></line>
+<line class="text-outline-variant/50" stroke="currentColor" stroke-width="1" x1="110" x2="58" y1="110" y2="175"></line>
+<line class="text-outline-variant/50" stroke="currentColor" stroke-width="1" x1="110" x2="25" y1="110" y2="80"></line>
+<polygon class="text-primary-container/20" fill="currentColor" points="110,28 180,85 148,162 68,160 38,82" stroke="currentColor" stroke-width="2"></polygon>
+<circle class="fill-primary-container" cx="110" cy="28" r="3.5"></circle>
+<circle class="fill-primary-container" cx="180" cy="85" r="3.5"></circle>
+<circle class="fill-primary-container" cx="148" cy="162" r="3.5"></circle>
+<circle class="fill-primary-container" cx="68" cy="160" r="3.5"></circle>
+<circle class="fill-primary-container" cx="38" cy="82" r="3.5"></circle>
+</svg>
+</div>
+<div class="md:col-span-6 flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">Technical Knowledge</span>
+<span class="text-primary-container font-code-md">86%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 86%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">Problem Solving</span>
+<span class="text-secondary font-code-md">82%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">Fundamentals</span>
+<span class="text-tertiary-container font-code-md">90%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-container h-1.5 rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">Depth &amp; Follow-ups</span>
+<span class="text-secondary-fixed-dim font-code-md">78%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-fixed-dim h-1.5 rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">Communication</span>
+<span class="text-primary font-code-md">88%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/60 p-space-sm rounded-lg text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">info</span>
+<span>Notice: AI-generated scores are empirical estimates derived from automated linguistic &amp; code syntax analysis.</span>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary-container">verified</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Identified Strengths</h2>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm uppercase font-semibold">High Proficiency</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Strong React fundamentals &amp; Hook lifecycle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Properly explained closure traps inside useEffect dependencies and stale state management.</span>
+</div>
+</div>
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm uppercase font-semibold">Reliable</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Good REST API error handling</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Handled idempotency, standardized error payloads, and async express middleware boundaries neatly.</span>
+</div>
+</div>
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm uppercase font-semibold">Soft Skill</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Clear verbal articulation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Excellently signposted architectural trade-offs without conversational stalling or filler loops.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-error">warning</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Growth &amp; Weakness Vectors</h2>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-error/20 text-error font-label-sm text-label-sm uppercase font-semibold">Critical Security</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Weak authentication token storage security</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended storing JWTs in localStorage, exposing application to cross-site scripting (XSS) compromise.</span>
+</div>
+</div>
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed-dim/20 text-secondary-fixed-dim font-label-sm text-label-sm uppercase font-semibold">Architecture</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Limited SQL indexing knowledge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hesitated on composite index order and B-tree search complexity vs sequential scans under high write volumes.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">menu_book</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Recommended Curated Study Paths</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-md">Tailored from identified weaknesses</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-high rounded-lg p-space-md flex flex-col justify-between hover:bg-surface-container-highest transition-colors group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold">Security Deep-dive</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary-container transition-colors">arrow_forward</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">Stateless Auth &amp; HttpOnly Cookies</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Implement double-submit cookie patterns, SameSite strict flags, and secure in-memory access token rotation.</p>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>18 min read</span>
+<span>•</span>
+<span>Interactive sandbox</span>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-md flex flex-col justify-between hover:bg-surface-container-highest transition-colors group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Database Systems</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-secondary transition-colors">arrow_forward</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">PostgreSQL &amp; Mongo Index Tuning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compound indices, cardinality profiling, EXPLAIN ANALYZE interpretation, and covering index nuances.</p>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>24 min read</span>
+<span>•</span>
+<span>Benchmarking suite</span>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-md flex flex-col justify-between hover:bg-surface-container-highest transition-colors group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-wider font-semibold">Runtime Profiling</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-tertiary-container transition-colors">arrow_forward</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">Node.js Event Loop Microtasks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mastering process.nextTick, Promise resolution queuing, and non-blocking I/O worker thread offloading.</p>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>15 min read</span>
+<span>•</span>
+<span>Diagnostic code examples</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-container">format_list_numbered</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Question-by-Question Transcript &amp; Adaptive Evaluation</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Questions Evaluated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full breakdown of candidate responses, interviewer follow-ups, and targeted diagnostic rubrics.</p>
+</div>
+<div class="flex flex-col gap-space-md" id="transcriptAccordionContainer">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-space-lg flex items-center justify-between bg-surface-container-high/40 hover:bg-surface-container-high/80 transition-colors transcript-toggle" data-target="q1-content" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="font-code-lg text-code-lg px-space-sm py-space-xs rounded bg-surface-container-highest text-primary-container font-semibold">Q1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold truncate">React State Synchronization &amp; Custom Hooks</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Domain: React Architecture • Score: 94/100</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="px-space-sm py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm font-semibold uppercase">Exemplary</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform transform rotate-180 toggle-icon">expand_more</span>
+</div>
+</button>
+<div class="p-space-lg flex flex-col gap-space-md" id="q1-content">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Interviewer Prompt</span>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+                "Suppose you have a custom hook wrapping a WebSocket connection for real-time telemetry. How do you prevent memory leaks and unnecessary reconnections when the consuming component re-renders?"
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Candidate Answer</span>
+<div class="p-space-md rounded-lg bg-surface-container-high/40 text-on-surface font-body-md text-body-md flex flex-col gap-space-xs">
+<p>"I'd isolate the socket lifecycle inside a `useEffect` keyed exclusively to the socket URL endpoint rather than unstable props. In the hook cleanup callback, I'd trigger an explicit `socket.close()` to avoid dangling sockets on unmount."</p>
+<div class="bg-surface-container-lowest p-space-sm rounded font-code-md text-code-md text-primary">
+                  useEffect(() =&gt; {<br/>
+                    const ws = new WebSocket(endpointUrl);<br/>
+                    ws.onmessage = (e) =&gt; setData(JSON.parse(e.data));<br/>
+                    return () =&gt; { ws.close(); };<br/>
+                  }, [endpointUrl]);
+                </div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-semibold">Interviewer Adaptive Follow-up</span>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+                "What happens if incoming messages arrive faster than React state updates can render? How do you mitigate frame drops?"
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Candidate Follow-up Answer</span>
+<div class="p-space-md rounded-lg bg-surface-container-high/40 text-on-surface font-body-md text-body-md">
+                "I'd buffer high-frequency telemetry into a `useRef` queue and throttle or batch the state flushes using `requestAnimationFrame` or React 18's `startTransition` to yield priority to critical interactive renders."
+              </div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">psychology</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold uppercase">AI Evaluator Diagnosis</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Candidate demonstrated flawless intuition for the React synthetic event loop and concurrent rendering priorities. Accurately identified that `useRef` bypasses the render cycle for high-frequency buffering.
+              </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-space-lg flex items-center justify-between bg-surface-container-high/40 hover:bg-surface-container-high/80 transition-colors transcript-toggle" data-target="q2-content" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="font-code-lg text-code-lg px-space-sm py-space-xs rounded bg-surface-container-highest text-primary-container font-semibold">Q2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold truncate">Authentication Flow &amp; JWT Token Management</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Domain: Web Security • Score: 62/100</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="px-space-sm py-0.5 rounded bg-error/20 text-error font-label-sm text-label-sm font-semibold uppercase">Needs Revision</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform toggle-icon">expand_more</span>
+</div>
+</button>
+<div class="p-space-lg flex flex-col gap-space-md hidden" id="q2-content">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Interviewer Prompt</span>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+                "Where should a single-page application store authentication tokens, and how do you handle silent token refresh cycles?"
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Candidate Answer</span>
+<div class="p-space-md rounded-lg bg-surface-container-high/40 text-on-surface font-body-md text-body-md">
+                "Typically I put the JWT in `localStorage` so it stays available when the user reloads tabs, and I create an Axios request interceptor that adds the Bearer auth header."
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-semibold">Interviewer Adaptive Follow-up</span>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+                "If an attacker exploits a third-party npm package to inject a rogue script, what prevents them from reading the token from localStorage?"
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Candidate Follow-up Answer</span>
+<div class="p-space-md rounded-lg bg-surface-container-high/40 text-on-surface font-body-md text-body-md">
+                "Well, with localStorage nothing really blocks that script. We could encrypt the token string before writing it to localStorage or use session storage."
+              </div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-error">psychology</span>
+<span class="font-label-sm text-label-sm text-error font-semibold uppercase">AI Evaluator Diagnosis</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Critical conceptual deficiency in browser client security. Client-side encryption key cannot be secured from XSS. The expected industry standard is storing the refresh token in an `HttpOnly`, `Secure`, `SameSite` cookie, retaining only short-lived access tokens in JS memory closure.
+              </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-space-lg flex items-center justify-between bg-surface-container-high/40 hover:bg-surface-container-high/80 transition-colors transcript-toggle" data-target="q3-content" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="font-code-lg text-code-lg px-space-sm py-space-xs rounded bg-surface-container-highest text-primary-container font-semibold">Q3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold truncate">MongoDB Aggregation &amp; High-Volume Query Optimization</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Domain: Database Architecture • Score: 85/100</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="px-space-sm py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm font-semibold uppercase">Proficient</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform toggle-icon">expand_more</span>
+</div>
+</button>
+<div class="p-space-lg flex flex-col gap-space-md hidden" id="q3-content">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Interviewer Prompt</span>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+                "In an analytics collection with 5 million documents, how do you construct an aggregation pipeline calculating monthly revenue by customer tier without triggering RAM limits?"
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Candidate Answer</span>
+<div class="p-space-md rounded-lg bg-surface-container-high/40 text-on-surface font-body-md text-body-md">
+                "First, place the `$match` stage early to leverage compound indexes on date ranges before running `$group`. Add `allowDiskUse: true` if intermediate memory exceeds the 100MB RAM cap."
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-semibold">Interviewer Adaptive Follow-up</span>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md">
+                "How does compound index field ordering influence the `$match` stage?"
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Candidate Follow-up Answer</span>
+<div class="p-space-md rounded-lg bg-surface-container-high/40 text-on-surface font-body-md text-body-md">
+                "Equality filters first, followed by sort orders, and range filters last—the ESR rule. This narrows scan candidate documents immediately."
+              </div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">psychology</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold uppercase">AI Evaluator Diagnosis</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Strong familiarity with MongoDB query engine execution plans and indexing heuristics (Equality, Sort, Range).
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-high text-primary-container">
+<span class="material-symbols-outlined text-[24px]">history_edu</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Evaluation Artifacts Archived</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Session transcript, speech spectrogram, and AST logs stored in secure profile vault.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-body-md text-body-md hover:bg-surface-container-highest transition-colors" type="button">
+          Share Report
+        </button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-highest text-primary-container font-body-md text-body-md hover:bg-surface-bright transition-colors font-medium" type="button">
+          Export PDF
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const toggles = document.querySelectorAll('.transcript-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const targetId = toggle.getAttribute('data-target');
+        const content = document.getElementById(targetId);
+        const icon = toggle.querySelector('.toggle-icon');
+        if (content) {
+          const isHidden = content.classList.contains('hidden');
+          if (isHidden) {
+            content.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+          } else {
+            content.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+          }
+        }
+      });
+    });
+
+    const downloadBtn = document.getElementById('downloadRecBtn');
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        const originalText = downloadBtn.innerHTML;
+        downloadBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin text-primary-container">sync</span><span>Preparing Blob...</span>';
+        setTimeout(() => {
+          const blob = new Blob(["Simulated interview recording binary stream (WebM/Opus). Interview Buddy v2.4 session ID: 8842."], { type: 'video/webm' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = "interview-session-8842-fullstack.webm";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          downloadBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span><span>Downloaded!</span>';
+          setTimeout(() => {
+            downloadBtn.innerHTML = originalText;
+          }, 2500);
+        }, 700);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-lg"><div class="w-full px-gutter-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm font-code-md text-code-md text-on-surface-variant"><span class="text-primary-container">•</span><span>Interview Buddy v2.4</span><span class="text-outline-variant">|</span><span>IDE Runtime Engine</span></div><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="guides" href="#">System Status</a><a class="hover:text-on-surface transition-colors" data-path="guides" href="#">Keyboard Shortcuts</a><a class="hover:text-on-surface transition-colors" data-path="settings" href="#">Diagnostics</a></div></div></footer></body></html>

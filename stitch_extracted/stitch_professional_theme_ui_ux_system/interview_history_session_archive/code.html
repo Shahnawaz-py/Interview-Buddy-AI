@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#849495","surface-variant":"#26364a","on-tertiary":"#003824","on-surface":"#d3e4fe","on-primary-container":"#006970","surface-container-high":"#1b2b3f","on-secondary-container":"#b0b2ff","surface-bright":"#2a3a4f","tertiary":"#d8ffe7","on-secondary-fixed":"#07006c","surface":"#031427","secondary-fixed-dim":"#c0c1ff","on-tertiary-fixed-variant":"#005236","on-primary-fixed-variant":"#004f54","inverse-on-surface":"#213145","primary-container":"#00f0ff","secondary-fixed":"#e1e0ff","outline-variant":"#3b494b","secondary":"#c0c1ff","surface-container-highest":"#26364a","on-error-container":"#ffdad6","on-surface-variant":"#b9cacb","on-error":"#690005","on-tertiary-container":"#006d4a","inverse-primary":"#006970","primary-fixed-dim":"#00dbe9","primary":"#dbfcff","surface-container-low":"#0b1c30","background":"#031427","on-secondary":"#1000a9","error":"#ffb4ab","on-primary":"#00363a","tertiary-container":"#65f2b5","tertiary-fixed":"#6ffbbe","on-tertiary-fixed":"#002113","surface-tint":"#00dbe9","surface-container":"#102034","on-secondary-fixed-variant":"#2f2ebe","on-background":"#d3e4fe","inverse-surface":"#d3e4fe","error-container":"#93000a","surface-dim":"#031427","on-primary-fixed":"#002022","primary-fixed":"#7df4ff","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#000f21","secondary-container":"#3131c0"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1rem","margin-lg":"2rem","gutter-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","margin":"1.5rem","space-xs":"0.25rem","margin-sm":"1rem","gutter-sm":"0.75rem","space-sm":"0.5rem","space-lg":"1.5rem"},fontFamily:{"title-md":["Geist"],"body-sm":["Geist"],"code-lg":["JetBrains Mono"],"body-md":["Geist"],"label-sm":["JetBrains Mono"],"headline-xl":["Geist"],"label-md":["JetBrains Mono"],"headline-xl-mobile":["Geist"],"body-lg":["Geist"],"headline-md":["Geist"],"headline-lg":["Geist"],"code-md":["JetBrains Mono"]},fontSize:{"title-md":["18px",{"lineHeight":"26px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"code-lg":["14px",{"lineHeight":"22px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"code-md":["13px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-gutter-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Interview Buddy Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFRdZOeYB-_fGxOxQDR30mqgQe9OtG5QKpRX8fkD-UZWT4Lg6QeEoEnHMURwvClcjFI2bWlGkD_NUJOpqX5HSpc_grJ7eiqGbm-I4Y44gjQ7opqhXyqQhUz1QzbNhnNpkMSBf8yjY0Bsc-HfV1ojiGRn3Vk9ON8UNxiQMT4VV6AkgGf7xp4KIUWk2NhcTueqZrOrvl1ToCrUa74WZNH-kZCSm_NYu19MB8C3e8Maw-q97B1My6jnNC"/><span class="font-title-md text-title-md text-on-surface font-semibold tracking-tight">Interview Buddy</span></div><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-high/60 border border-outline-variant/40"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Live Session Ready</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="text-on-surface bg-surface-container-high border-b-2 border-primary-container"><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="practice" href="#">Practice</a><a aria-current="page" class="px-space-md py-space-sm font-body-md transition-colors rounded-lg text-on-surface bg-surface-container-high border-b-2 border-primary-container" data-path="history" href="#">History</a><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="guides" href="#">Guides</a><a class="px-space-md py-space-sm font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="settings" href="#">Settings</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low border border-outline-variant/50 rounded-full p-space-xs"><button aria-label="Theme Toggle" class="flex items-center justify-center w-7 h-7 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">light_mode</span></button><button aria-label="Dark Mode Enabled" class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-highest text-primary-container shadow-inner" type="button"><span class="material-symbols-outlined text-[16px]">dark_mode</span></button></div><div class="h-4 w-[1px] bg-outline-variant/40 hidden sm:block"></div><button class="flex items-center gap-space-sm focus:outline-none focus:ring-1 focus:ring-primary-container rounded-full p-0.5" type="button"><img alt="Candidate Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0C6kQRww1V78MUN1MyBGv5gqQr059tJscQXPXyNZG0FTtyHqeacRBdevWwXZ4vj81Iwbnjq3Pt08w3OLO33yhAW_K6X-l3Wu5pXA0DEj5GL89PKkIvNjAuKnfHf2K6m5dLzD5FbWN9eVGbkRLUEM0SrpvlEDTGg0YaygEXQ04XIWhzf4QSc-pOXGoIQhSfXvyXa_II8YenWGanddsDg4LvWth28ZWinC0aEjYPDLF5142TKydfcE"/></button></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow & Grid Substrate -->
+<div class="relative w-full overflow-hidden px-gutter-lg py-space-xl">
+<div class="absolute -top-40 -left-40 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-40 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Section 1: Header / Page Banner -->
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">
+<span class="text-primary-container">DASHBOARD</span>
+<span>/</span>
+<span class="text-on-surface">SESSION ARCHIVE</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse ml- space-xs"></span>
+<span class="font-code-md text-code-md text-tertiary-container">LOCAL-DB SYNCED</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">
+          Interview History
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Review historical verbal mock sessions, adaptive AI feedback scores, complete transcripts, and recorded video archives.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap sm:flex-nowrap">
+<button class="group flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-all duration-150 active:scale-[0.98] shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary-container transition-colors">download</span>
+<span>Export CSV</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-headline-md text-body-md font-semibold transition-all duration-150 shadow-[0_0_18px_rgba(0,240,255,0.28)] hover:shadow-[0_0_24px_rgba(0,240,255,0.45)] active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+<span>New Interview Session</span>
+</button>
+</div>
+</div>
+<!-- Section 2: Global Session Analytics / Performance Trajectory Bar -->
+<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<!-- Metric 1 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md hover:bg-surface-container-high transition-colors flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Sessions</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/15 text-tertiary-container font-label-sm text-label-sm">
+            +3 this week
+          </span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">14 Sessions</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Recorded &amp; AI Assessed</p>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md hover:bg-surface-container-high transition-colors flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Readiness Consensus</span>
+<span class="flex items-center gap-0.5 font-label-sm text-label-sm text-tertiary-container">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+6% vs base</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold tracking-tight">81.4%</span>
+<span class="font-label-sm text-label-sm text-tertiary px-1.5 py-0.5 rounded bg-on-tertiary/60">Strong Hire Trend</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rolling 5-session average</p>
+</div>
+<!-- Sparkline Chart -->
+<div class="h-5 w-full flex items-end gap-1">
+<div class="w-1/6 bg-surface-variant rounded-t h-2"></div>
+<div class="w-1/6 bg-surface-variant rounded-t h-3"></div>
+<div class="w-1/6 bg-surface-bright rounded-t h-3.5"></div>
+<div class="w-1/6 bg-secondary-container rounded-t h-4"></div>
+<div class="w-1/6 bg-primary-fixed-dim rounded-t h-4.5"></div>
+<div class="w-1/6 bg-primary-container rounded-t h-5"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md hover:bg-surface-container-high transition-colors flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Time Practiced</span>
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">mic</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">5h 42m</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">100% verbal audio captured</p>
+</div>
+<div class="flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-code-md text-code-md text-on-surface-variant text-[11px]">Whisper STT active</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md hover:bg-surface-container-high transition-colors flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Top Mastered Stack</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/10 text-primary-container font-label-sm text-label-sm">
+            92% Mastery
+          </span>
+</div>
+<div class="my-space-sm">
+<div class="font-title-md text-title-md text-on-surface font-bold tracking-tight truncate">React &amp; Node.js</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High proficiency threshold</p>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-code-md text-code-md text-[10px] text-primary bg-surface-container-lowest px-1.5 py-0.5 rounded">MERN</span>
+<span class="font-code-md text-code-md text-[10px] text-primary bg-surface-container-lowest px-1.5 py-0.5 rounded">REST / GraphQL</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Filter & Search Controls Toolbar -->
+<div class="relative z-10 bg-surface-container-low rounded-xl p-space-md mb-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-lowest pl-11 pr-space-md py-space-sm rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Search by role, stack tag, or feedback note..." type="text"/>
+</div>
+<!-- Dropdowns -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm">
+<!-- Role Filter -->
+<div class="relative min-w-[200px] flex-1 sm:flex-initial">
+<select aria-label="Filter mock sessions by target role" class="w-full appearance-none bg-surface-container-high text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container pr-9 cursor-pointer">
+<option>All Roles (Software Eng, Full Stack)</option>
+<option>Full Stack Developer</option>
+<option>Software Engineer</option>
+<option>Backend Architect</option>
+<option>Frontend Specialist</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Experience Level -->
+<div class="relative min-w-[170px] flex-1 sm:flex-initial">
+<select aria-label="Filter mock sessions by candidate seniority level" class="w-full appearance-none bg-surface-container-high text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container pr-9 cursor-pointer">
+<option>All Levels (Junior, Mid)</option>
+<option>Junior Level</option>
+<option>Mid-Level</option>
+<option>Senior / Staff</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Sort -->
+<div class="relative min-w-[160px] flex-1 sm:flex-initial">
+<select aria-label="Sort mock sessions archive" class="w-full appearance-none bg-surface-container-high text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container pr-9 cursor-pointer">
+<option>Sort: Most Recent</option>
+<option>Highest Score</option>
+<option>Lowest Score</option>
+<option>Longest Duration</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">swap_vert</span>
+</div>
+</div>
+</div>
+<!-- Tech Stack Filter Pills -->
+<div class="flex items-center gap-space-xs flex-wrap pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline-variant mr-space-xs uppercase">Stack:</span>
+<button class="px-space-sm py-1 rounded-md font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold" type="button">
+          All
+        </button>
+<button class="px-space-sm py-1 rounded-md font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">
+          MERN
+        </button>
+<button class="px-space-sm py-1 rounded-md font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">
+          React
+        </button>
+<button class="px-space-sm py-1 rounded-md font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">
+          Node.js
+        </button>
+<button class="px-space-sm py-1 rounded-md font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">
+          SQL
+        </button>
+<button class="px-space-sm py-1 rounded-md font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">
+          System Design
+        </button>
+<button class="px-space-sm py-1 rounded-md font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">
+          JavaScript
+        </button>
+</div>
+</div>
+<!-- Main Content Layout: History Feed + Side Preview -->
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Session Entries (8 of 12) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Entry 1 (Selected/Recent) -->
+<div class="group bg-surface-container rounded-xl p-space-lg transition-all duration-200 shadow-md hover:shadow-xl relative overflow-hidden ring-1 ring-primary-container/40">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-md text-code-md text-primary-container font-semibold bg-surface-container-lowest px-2 py-0.5 rounded">
+                #IB-8842-MERN
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">October 24, 2024</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span> 22m 40s
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary-fixed-dim font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Strong Hire (85%)
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">
+                92nd %ile
+              </span>
+</div>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Full Stack Developer</h3>
+<span class="font-body-sm text-body-sm text-secondary">· Mid-level</span>
+</div>
+<!-- Tags -->
+<div class="flex items-center gap-space-xs flex-wrap mt-space-xs">
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">React</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Node.js</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Express</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">MongoDB</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">JWT</span>
+</div>
+<!-- AI Summary snippet -->
+<div class="mt-space-md p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0 mt-0.5">psychology</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Excellently articulated React concurrency and <code class="font-code-md text-code-md text-primary-fixed">useEffect</code> cleanup. Minor vulnerability flagged in client-side JWT persistence.
+                </p>
+</div>
+</div>
+<!-- Media Preview & Action bar -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<!-- Video badge -->
+<div class="flex items-center gap-space-xs px-2 py-1 rounded bg-surface-container-high text-on-surface-variant font-code-md text-code-md text-[11px]">
+<span class="material-symbols-outlined text-primary-container text-[16px]">videocam</span>
+<span>WebM Available (42 MB)</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary-fixed-dim">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span>Audio Ingest Synced</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">subtitles</span>
+<span>Transcript</span>
+</button>
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">download_for_offline</span>
+<span>Video</span>
+</button>
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-primary-container bg-primary-container hover:bg-primary font-semibold transition-all shadow-[0_0_12px_rgba(0,240,255,0.25)] flex items-center gap-1" type="button">
+<span>Full Report</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 2 -->
+<div class="group bg-surface-container rounded-xl p-space-lg transition-all duration-200 shadow-md hover:shadow-xl relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-md text-code-md text-primary font-semibold bg-surface-container-lowest px-2 py-0.5 rounded">
+                #IB-8791-BACKEND
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">October 20, 2024</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span> 31m 15s
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                Proficient (79%)
+              </span>
+</div>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Software Engineer</h3>
+<span class="font-body-sm text-body-sm text-secondary">· Mid-level</span>
+</div>
+<!-- Tags -->
+<div class="flex items-center gap-space-xs flex-wrap mt-space-xs">
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Node.js</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">PostgreSQL</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Distributed Caching</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Redis</span>
+</div>
+<!-- AI Summary snippet -->
+<div class="mt-space-md p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">psychology</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Demonstrated solid understanding of connection pooling and transaction isolation levels; struggled slightly on Redis eviction policies.
+                </p>
+</div>
+</div>
+<!-- Media Preview & Action bar -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-2 py-1 rounded bg-surface-container-high text-on-surface-variant font-code-md text-code-md text-[11px]">
+<span class="material-symbols-outlined text-primary-container text-[16px]">videocam</span>
+<span>WebM Available (58 MB)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">subtitles</span>
+<span>View Transcript</span>
+</button>
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">download</span>
+<span>Download Video</span>
+</button>
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span>View Full Report</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 3 -->
+<div class="group bg-surface-container rounded-xl p-space-lg transition-all duration-200 shadow-md hover:shadow-xl relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-md text-code-md text-primary font-semibold bg-surface-container-lowest px-2 py-0.5 rounded">
+                #IB-8640-FRONTEND
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">October 15, 2024</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span> 18m 04s
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary-fixed-dim font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Strong Hire (91%)
+              </span>
+</div>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Full Stack Developer</h3>
+<span class="font-body-sm text-body-sm text-secondary">· Junior</span>
+</div>
+<!-- Tags -->
+<div class="flex items-center gap-space-xs flex-wrap mt-space-xs">
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">JavaScript</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">DOM</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">CSS Grid</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Async/Await</span>
+</div>
+<!-- AI Summary snippet -->
+<div class="mt-space-md p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px] shrink-0 mt-0.5">psychology</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Flawless explanation of event loop microtasks vs macrotasks. Very natural and confident verbal articulation.
+                </p>
+</div>
+</div>
+<!-- Media Preview & Action bar -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-2 py-1 rounded bg-surface-container-high text-on-surface-variant font-code-md text-code-md text-[11px]">
+<span class="material-symbols-outlined text-primary-container text-[16px]">videocam</span>
+<span>WebM Available (34 MB)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">subtitles</span>
+<span>View Transcript</span>
+</button>
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">download</span>
+<span>Download Video</span>
+</button>
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span>View Full Report</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 4 -->
+<div class="group bg-surface-container rounded-xl p-space-lg transition-all duration-200 shadow-md hover:shadow-xl relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-md text-code-md text-primary font-semibold bg-surface-container-lowest px-2 py-0.5 rounded">
+                #IB-8512-SYS
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">October 08, 2024</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span> 25m 50s
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+                Needs Practice (64%)
+              </span>
+</div>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Software Engineer</h3>
+<span class="font-body-sm text-body-sm text-secondary">· Mid-level</span>
+</div>
+<!-- Tags -->
+<div class="flex items-center gap-space-xs flex-wrap mt-space-xs">
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">System Design</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">SQL</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Load Balancing</span>
+<span class="font-code-md text-code-md text-[11px] bg-surface-container-high text-primary px-2 py-0.5 rounded">Docker</span>
+</div>
+<!-- AI Summary snippet -->
+<div class="mt-space-md p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">warning</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Good grasp on horizontal scaling, but incomplete reasoning regarding database replication lag and CAP theorem tradeoffs.
+                </p>
+</div>
+</div>
+<!-- Media Preview & Action bar -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-2 py-1 rounded bg-surface-container-high text-on-surface-variant font-code-md text-code-md text-[11px]">
+<span class="material-symbols-outlined text-primary-container text-[16px]">videocam</span>
+<span>WebM Available (48 MB)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">subtitles</span>
+<span>View Transcript</span>
+</button>
+<button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">download</span>
+<span>Download Video</span>
+</button>
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span>View Full Report</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Quick Inspection Drawer / Side Preview (4 of 12) -->
+<div class="lg:col-span-4 sticky top-20 flex flex-col gap-space-md">
+<div class="bg-surface-container rounded-xl p-space-md shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px]">biotech</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wide">QUICK INSPECTION</span>
+</div>
+<span class="font-code-md text-code-md text-primary-container text-[11px]">#IB-8842-MERN</span>
+</div>
+<!-- Video Replay Thumbnail Card -->
+<div class="relative w-full h-44 rounded-lg bg-surface-container-lowest overflow-hidden flex items-center justify-center group cursor-pointer">
+<img class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity" data-alt="A dark developer workbench simulation frame with split pane interface, webcam video feed of a focused candidate, code syntax in cyan, and AI feedback waveform indicators in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnGdqjSrywy5V7Zlae1PPJGvpS7CPrkNYD3isqdriaFbyuTPDY7eAXVIjITJMjSx2uTQR77gSmQxgO3a5nCLvCMw3VAR6g6-x8-b84d622fGH0ZHHbeFpQ9zNoblstllrPx4vDvLEVheBaPB0Y8Mve0yQPXERNF_4aF3Md8eH1bdhmbV7vP5phrz_OKSf6ijEQebYktW5e0Tzd9cS-hbE6gANkF-7qk8_O_VaZg2pytYvpyjNwa8k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary-container/90 text-on-primary-container flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 left-2 font-code-md text-code-md text-[10px] bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded">
+              00:00 / 22:40
+            </span>
+<span class="absolute bottom-2 right-2 font-code-md text-code-md text-[10px] bg-surface-container-lowest/80 text-tertiary px-1.5 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 1080p WebM
+            </span>
+</div>
+<!-- Mini Radar / Attribute Vector Breakdown -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Adaptive Competency Vector</span>
+<span class="font-code-md text-code-md text-primary-container text-[11px]">85.0 Total</span>
+</div>
+<div class="space-y-space-xs">
+<div>
+<div class="flex justify-between font-code-md text-code-md text-[11px] mb-0.5">
+<span class="text-on-surface-variant">System Architecture</span>
+<span class="text-on-surface">88%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-code-md text-code-md text-[11px] mb-0.5">
+<span class="text-on-surface-variant">Algorithmic Problem Solving</span>
+<span class="text-on-surface">84%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed-dim h-full rounded-full" style="width: 84%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-code-md text-code-md text-[11px] mb-0.5">
+<span class="text-on-surface-variant">Verbal Articulation / Clarity</span>
+<span class="text-on-surface">92%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-code-md text-code-md text-[11px] mb-0.5">
+<span class="text-on-surface-variant">Security &amp; Edge Cases</span>
+<span class="text-error">68%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 68%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Adaptive Questions Probed -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Adaptive Probes</span>
+<span class="font-code-md text-code-md text-on-surface-variant text-[11px]">4 Questions</span>
+</div>
+<ul class="space-y-1 text-[11px] font-body-sm text-on-surface-variant">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[14px]">check</span>
+<span>Q1: Concurrent React reconciliation cycles</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[14px]">check</span>
+<span>Q2: Node.js worker pool vs event-loop</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[14px]">check</span>
+<span>Q3: MongoDB indexing with aggregation</span>
+</li>
+<li class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-error text-[14px]">close</span>
+<span>Q4: XSS attack vectors on local storage</span>
+</li>
+</ul>
+</div>
+<!-- Key Weakness Vector Highlight -->
+<div class="p-space-sm rounded-lg bg-surface-variant/40 flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">flag</span>
+<div class="text-[12px]">
+<span class="font-semibold text-on-surface block">Primary Weakness Flagged:</span>
+<span class="text-on-surface-variant">Candidate stored bearer JWT directly inside localStorage instead of HttpOnly SameSite cookie.</span>
+</div>
+</div>
+<!-- Bottom Action in Drawer -->
+<button class="w-full py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Launch Complete Diagnostic</span>
+</button>
+</div>
+<!-- Telemetry Info Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-between text-[11px] text-on-surface-variant font-code-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">database</span>
+<span>Local IndexedDB Cache: 182 MB</span>
+</div>
+<button class="text-primary-container hover:underline" type="button">Purge</button>
+</div>
+</div>
+</div>
+<!-- Section 6: Pagination & Storage Telemetry Footer -->
+<div class="relative z-10 mt-space-xl pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-low/60 rounded-xl px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<span>Showing <strong class="text-on-surface font-medium">1–4</strong> of <strong class="text-on-surface font-medium">14</strong> mock sessions</span>
+<span class="hidden md:inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="hidden md:inline font-code-md text-code-md text-[11px]">Auto-purge cycle: 30 days retention</span>
+</div>
+<!-- Pagination Nav Controls -->
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded bg-surface-container-high text-outline cursor-not-allowed flex items-center justify-center" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded bg-primary-container text-on-primary-container font-code-md text-code-md text-[12px] font-bold flex items-center justify-center shadow-sm" type="button">
+          1
+        </button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-code-md text-code-md text-[12px] flex items-center justify-center transition-colors" type="button">
+          2
+        </button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-code-md text-code-md text-[12px] flex items-center justify-center transition-colors" type="button">
+          3
+        </button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-code-md text-code-md text-[12px] flex items-center justify-center transition-colors" type="button">
+          4
+        </button>
+<button class="p-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-lg"><div class="w-full px-gutter-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm font-code-md text-code-md text-on-surface-variant"><span class="text-primary-container">•</span><span>Interview Buddy v2.4</span><span class="text-outline-variant">|</span><span>IDE Runtime Engine</span></div><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="guides" href="#">System Status</a><a class="hover:text-on-surface transition-colors" data-path="guides" href="#">Keyboard Shortcuts</a><a class="hover:text-on-surface transition-colors" data-path="settings" href="#">Diagnostics</a></div></div></footer></body></html>
