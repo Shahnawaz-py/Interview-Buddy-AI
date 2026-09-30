@@ -141,7 +141,7 @@ export const SpeechTranscript: React.FC<SpeechTranscriptProps> = ({
           type="button"
           onClick={handleSubmit}
           disabled={!currentFullText.trim() || isSubmitting}
-          className="flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary-container text-on-primary-container font-geist text-body-md font-semibold hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all disabled:opacity-40 disabled:pointer-events-none"
+          className="flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary-container text-on-primary-container font-geist text-body-md font-semibold hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all disabled:opacity-40 disabled:pointer-events-none"
         >
           <span>{isSubmitting ? 'Analyzing...' : 'Submit Verbal Answer'}</span>
           <span className="material-symbols-outlined text-[18px]">send</span>

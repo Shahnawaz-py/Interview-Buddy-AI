@@ -39,7 +39,7 @@ export default function Home() {
       console.error('Error starting interview:', err);
       setError(
         err.response?.data?.error ||
-          'Could not connect to backend server. Make sure server is running on port 5001.'
+        'Could not connect to backend server. Make sure server is running on port 5001.'
       );
     } finally {
       setIsLoading(false);
@@ -113,11 +113,10 @@ export default function Home() {
               {/* Full Stack Developer Card */}
               <div
                 onClick={() => setRole('Full Stack Developer')}
-                className={`cursor-pointer transition-all duration-200 p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-lg relative overflow-hidden ${
-                  role === 'Full Stack Developer'
+                className={`cursor-pointer transition-all duration-200 p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-lg relative overflow-hidden ${role === 'Full Stack Developer'
                     ? 'bg-surface-container ring-2 ring-primary-container'
                     : 'bg-surface-container-low hover:bg-surface-container'
-                }`}
+                  }`}
               >
                 <div className="flex flex-col gap-space-sm">
                   <div className="flex items-center justify-between">
@@ -151,11 +150,10 @@ export default function Home() {
               {/* Software Engineer Card */}
               <div
                 onClick={() => setRole('Software Engineer')}
-                className={`cursor-pointer transition-all duration-200 p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-lg relative overflow-hidden ${
-                  role === 'Software Engineer'
+                className={`cursor-pointer transition-all duration-200 p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-lg relative overflow-hidden ${role === 'Software Engineer'
                     ? 'bg-surface-container ring-2 ring-primary-container'
                     : 'bg-surface-container-low hover:bg-surface-container'
-                }`}
+                  }`}
               >
                 <div className="flex flex-col gap-space-sm">
                   <div className="flex items-center justify-between">
@@ -213,11 +211,10 @@ export default function Home() {
                   key={item.name}
                   type="button"
                   onClick={() => setStack(item.name)}
-                  className={`flex items-center justify-between p-space-sm rounded-lg transition-colors text-left ${
-                    stack === item.name
+                  className={`flex items-center justify-between p-space-sm rounded-lg transition-colors text-left ${stack === item.name
                       ? 'bg-surface-container ring-1 ring-primary-container text-on-surface'
                       : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container'
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-space-xs">
                     <span className="material-symbols-outlined text-[16px] text-primary-container">{item.icon}</span>
@@ -247,11 +244,10 @@ export default function Home() {
                   key={lvl}
                   type="button"
                   onClick={() => setDifficulty(lvl)}
-                  className={`p-space-md rounded-xl border text-left transition-all ${
-                    difficulty === lvl
+                  className={`p-space-md rounded-xl border text-left transition-all ${difficulty === lvl
                       ? 'bg-surface-container border-primary-container text-on-surface shadow-md'
                       : 'bg-surface-container-low border-outline-variant/30 text-on-surface-variant hover:bg-surface-container'
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center justify-between">
                     <span className="font-geist text-headline-md font-semibold text-on-surface">{lvl} Track</span>
@@ -311,7 +307,7 @@ export default function Home() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full py-space-md bg-primary-container text-on-primary-container font-geist text-body-lg font-bold rounded-lg hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all flex items-center justify-center gap-space-xs disabled:opacity-50"
+                className="w-full py-space-md bg-primary-container text-on-primary-container font-geist text-body-lg font-bold rounded-lg hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all flex items-center justify-center gap-space-xs disabled:opacity-50"
               >
                 {isLoading ? (
                   <span>Initializing Engine...</span>
@@ -413,7 +409,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => setIsModalOpen(false)}
-                className="px-space-lg py-space-sm bg-primary-container text-on-primary-container font-geist text-body-md font-semibold rounded-lg hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all"
+                className="px-space-lg py-space-sm bg-primary-container text-on-primary-container font-geist text-body-md font-semibold rounded-lg hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all"
               >
                 Done & Return to Setup
               </button>

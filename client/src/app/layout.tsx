@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
       <body className="bg-surface font-geist text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
         <Navbar />
-        <main className="w-full pt-16 bg-surface min-h-screen flex-1">
+        <main className="w-full pt-24 bg-surface min-h-screen flex-1">
           {children}
         </main>
         <footer className="w-full border-t border-outline-variant/30 bg-surface-container-low/80 py-6 text-center text-xs text-on-surface-variant">

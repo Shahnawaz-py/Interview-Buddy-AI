@@ -53,7 +53,7 @@ export const WebcamPreview: React.FC<WebcamPreviewProps> = ({
 
         {/* Top Left Stream Stamp */}
         <div className="absolute top-space-md left-space-md flex items-center gap-space-xs bg-surface-container-lowest/85 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-md border border-outline-variant/40">
-          <span className="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,240,255,0.8)] animate-pulse"></span>
+          <span className="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(6,182,212,0.8)] animate-pulse"></span>
           <span className="font-mono text-label-sm uppercase tracking-wider text-primary-container font-bold">
             Candidate Feed · HD
           </span>
@@ -84,7 +84,7 @@ export const WebcamPreview: React.FC<WebcamPreviewProps> = ({
             {[30, 55, 75, 90, 60, 40, 65, 80, 95, 65, 45, 70, 85, 50, 30, 60, 90, 80, 40, 70, 85, 35, 55, 75].map((h, i) => (
               <div
                 key={i}
-                className="w-full bg-primary-container rounded-t transition-all duration-150 ease-out shadow-[0_0_8px_rgba(0,240,255,0.4)]"
+                className="w-full bg-primary-container rounded-t transition-all duration-150 ease-out shadow-[0_0_8px_rgba(37,99,235,0.4)]"
                 style={{ height: `${isRecording ? h : 15}%` }}
               />
             ))}

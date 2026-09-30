@@ -66,7 +66,7 @@ export default function HistoryPage() {
 
         <Link
           href="/"
-          className="flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary-container text-on-primary-container font-geist text-body-md font-semibold hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all"
+          className="flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary-container text-on-primary-container font-geist text-body-md font-semibold hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all"
         >
           <span className="material-symbols-outlined text-[18px]">add</span>
           <span>New Technical Session</span>
@@ -93,7 +93,7 @@ export default function HistoryPage() {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded bg-primary-container text-on-primary-container font-geist text-body-md font-semibold hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all"
+            className="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded bg-primary-container text-on-primary-container font-geist text-body-md font-semibold hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all"
           >
             Start Your First Interview
           </Link>

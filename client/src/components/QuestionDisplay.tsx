@@ -56,7 +56,7 @@ export const QuestionDisplay: React.FC<QuestionDisplayProps> = ({
       {/* Header: Agent Identity & Adaptive Context Badge */}
       <div className="flex items-start justify-between gap-space-sm flex-wrap">
         <div className="flex items-center gap-space-sm">
-          <div className="w-10 h-10 rounded bg-primary-container/15 flex items-center justify-center text-primary-container shadow-[0_0_12px_rgba(0,240,255,0.25)] border border-primary-container/30">
+          <div className="w-10 h-10 rounded bg-primary-container/15 flex items-center justify-center text-primary-container shadow-[0_0_12px_rgba(37,99,235,0.25)] border border-primary-container/30">
             <span className="material-symbols-outlined text-[24px]">psychology</span>
           </div>
           <div className="flex flex-col">
@@ -123,7 +123,7 @@ export const QuestionDisplay: React.FC<QuestionDisplayProps> = ({
         <div className="flex items-center gap-space-sm">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-container shadow-[0_0_8px_rgba(0,240,255,0.8)]"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-container shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
           </span>
           <span className="font-mono text-label-md text-on-surface font-semibold tracking-wide">
             {isSpeaking ? 'AI Speaking Question...' : 'Listening & Analyzing Answer...'}

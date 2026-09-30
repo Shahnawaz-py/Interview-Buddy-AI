@@ -11,7 +11,7 @@ if (process.env.GEMINI_API_KEY) {
  */
 const generateNextTurn = async ({ role, stack, difficulty, transcript, topicsCovered }) => {
   const systemPrompt = getInterviewerSystemPrompt(role, stack, difficulty);
-  
+
   // Format history for context
   const formattedTranscript = transcript.map(t => `${t.speaker.toUpperCase()} (${t.topic || 'General'}): ${t.text}`).join('\n');
   const userPrompt = `
